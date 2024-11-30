@@ -1,0 +1,6 @@
+extends:
+  - recommended
+
+apis:
+  user-service-api:
+    root: ./openapi/user-service-api.yaml

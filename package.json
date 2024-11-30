@@ -1,0 +1,14 @@
+{
+  "name": "typespec-demo",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@redocly/cli": "^1.25.15",
+    "@typespec/compiler": "0.62.0",
+    "@typespec/http": "0.62.0",
+    "@typespec/openapi": "0.62.0",
+    "@typespec/openapi3": "0.62.0",
+    "@typespec/versioning": "0.62.0"
+  }
+}

@@ -1,0 +1,4 @@
+packages:
+  - pet-service
+  - user-service
+  - bff

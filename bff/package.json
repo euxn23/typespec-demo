@@ -1,0 +1,16 @@
+{
+  "name": "bff",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "watch": "pnpm run \"/^watch:/\"",
+    "watch:spec": "tsp compile --watch ./spec",
+    "watch:redoc": "redocly preview-docs --host 0.0.0.0 --port 8001",
+    "build": "tsp compile ./spec",
+    "build:redoc": "redocly build-docs --output openapi/index.html"
+  }, 
+  "devDependencies": {
+    "user-service": "workspace:*"
+  },
+  "private": true
+}

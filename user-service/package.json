@@ -1,0 +1,21 @@
+{
+  "name": "user-service",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "typespec": "./spec/main.tsp"
+    },
+    "./models": {
+      "typespec": "./spec/models/main.tsp"
+    }
+  },
+  "scripts": {
+    "watch": "pnpm run \"/^watch:/\"",
+    "watch:spec": "tsp compile --watch ./spec",
+    "watch:redoc": "redocly preview-docs --host 0.0.0.0 --port 8000",
+    "build": "tsp compile ./spec",
+    "build:redoc": "redocly build-docs --output openapi/index.html"
+  }, 
+  "private": true
+}

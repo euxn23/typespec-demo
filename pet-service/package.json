@@ -1,0 +1,17 @@
+{
+  "name": "pet-service",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "typespec": "./spec/main.tsp"
+    },
+    "./models": {
+      "typespec": "./spec/models/main.tsp"
+    }
+  },
+  "scripts": {
+    "build": "tsp compile ./spec"
+  }, 
+  "private": true
+}
